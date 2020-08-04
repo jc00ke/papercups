@@ -1,7 +1,7 @@
 defmodule ChatApiWeb.ConversationChannel do
   use ChatApiWeb, :channel
 
-  alias ChatApi.{Accounts, Messages, Conversations, Emails}
+  alias ChatApi.{Messages, Conversations, Emails}
 
   @impl true
   def join("conversation:lobby", payload, socket) do
